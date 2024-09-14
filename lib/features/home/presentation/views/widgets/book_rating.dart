@@ -5,7 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../../core/utils/style.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key, required this.mainAxisAlignment});
+  const BookRating({super.key, this.mainAxisAlignment = MainAxisAlignment.start});
   final MainAxisAlignment mainAxisAlignment;
   @override
   Widget build(BuildContext context) {
@@ -14,6 +14,7 @@ class BookRating extends StatelessWidget {
       children: const [
         Icon(
           FontAwesomeIcons.solidStar,
+          size: 15,
           color: Color(0xffFFDD4F),
         ),
         Padding(
@@ -27,7 +28,7 @@ class BookRating extends StatelessWidget {
           opacity: .7,
           child: Text(
             '(2390)',
-            style: Style.textStyle16,
+            style: Style.textStyle14
           ),
         ),
       ],
