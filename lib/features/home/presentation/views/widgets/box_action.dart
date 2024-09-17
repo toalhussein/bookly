@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_button.dart';
@@ -19,7 +18,8 @@ class BooksAction extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(16),
                 topLeft: Radius.circular(16),
-              ), textButton: '19.99€',
+              ),
+              textButton: '19.99€',
             ),
           ),
           Expanded(
@@ -29,9 +29,9 @@ class BooksAction extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(16),
                 topRight: Radius.circular(16),
-              ), textButton: 'Free Preview',
+              ),
+              textButton: 'Free Preview',
               fontSize: 16,
-              
             ),
           )
         ],

@@ -43,17 +43,17 @@ class BookListViewItem extends StatelessWidget {
                       'Harry Potter and the Goblet of Fisre',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: Style.textStyle20.copyWith(fontFamily: kGtSectrafine),
+                      style:
+                          Style.textStyle20.copyWith(fontFamily: kGtSectrafine),
                     ),
                   ),
                   const Opacity(
                     opacity: .7,
-                    child: Text(
-                      'J.K. Rowling',
-                      style: Style.textStyle14),
+                    child: Text('J.K. Rowling', style: Style.textStyle14),
                   ),
-                  const SizedBox(height: 8,),
-                  
+                  const SizedBox(
+                    height: 8,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

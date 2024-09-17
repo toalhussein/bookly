@@ -1,11 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utils/style.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key, this.mainAxisAlignment = MainAxisAlignment.start});
+  const BookRating(
+      {super.key, this.mainAxisAlignment = MainAxisAlignment.start});
   final MainAxisAlignment mainAxisAlignment;
   @override
   Widget build(BuildContext context) {
@@ -26,10 +26,7 @@ class BookRating extends StatelessWidget {
         ),
         Opacity(
           opacity: .7,
-          child: Text(
-            '(2390)',
-            style: Style.textStyle14
-          ),
+          child: Text('(2390)', style: Style.textStyle14),
         ),
       ],
     );
