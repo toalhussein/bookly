@@ -5,7 +5,7 @@ import '../model/book_model/book_model.dart';
 
 abstract class HomeRepo {
 
-  Future<Either<Failuer, List<BookModel>>> fetchBestSellerBooks();
+  Future<Either<Failuer, List<BookModel>>> fetchNewstBooks();
   Future<Either<Failuer, List<BookModel>>> fetchFeaturedBooks();
 }
 
