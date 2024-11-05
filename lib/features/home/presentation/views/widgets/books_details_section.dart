@@ -16,7 +16,7 @@ class BookDetailSectoin extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(imageUrl: 'https://cdn.kobo.com/book-images/eac349ef-86d3-4ae3-a2c8-1d02dd23693a/353/569/90/False/c-programming-language-classmate-in-a-book-2021-release.jpg',),
         ),
         const SizedBox(height: 43),
         const Text(
