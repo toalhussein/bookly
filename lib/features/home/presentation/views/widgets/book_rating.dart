@@ -5,14 +5,17 @@ import '../../../../../core/utils/style.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating(
-      {super.key, this.mainAxisAlignment = MainAxisAlignment.start});
+      {super.key, this.mainAxisAlignment = MainAxisAlignment.start, required this.rating, required this.count});
   final MainAxisAlignment mainAxisAlignment;
+  final int rating;
+  final int count;
+  
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: mainAxisAlignment,
-      children: const [
-        Icon(
+      children: [
+        const Icon(
           FontAwesomeIcons.solidStar,
           size: 15,
           color: Color(0xffFFDD4F),
@@ -20,13 +23,13 @@ class BookRating extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 6),
           child: Text(
-            '4.8',
-            style: Style.textStyle16,
+            rating.toString(),
+            style: Style.textStyle14,
           ),
         ),
         Opacity(
           opacity: .7,
-          child: Text('(2390)', style: Style.textStyle14),
+          child: Text(count.toString(), style: Style.textStyle14),
         ),
       ],
     );

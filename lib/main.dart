@@ -28,7 +28,7 @@ class BoolkyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => NewsedBooksCubit(
             getIt.get<HomeRepoImpelement>()
-          ),
+          )..fetchNewsedBooks(),
         ),
       ],
       child: MaterialApp.router(
