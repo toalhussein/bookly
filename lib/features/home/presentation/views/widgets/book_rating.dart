@@ -21,7 +21,7 @@ class BookRating extends StatelessWidget {
           color: Color(0xffFFDD4F),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 6),
+          padding: const EdgeInsets.symmetric(horizontal: 6),
           child: Text(
             rating.toString(),
             style: Style.textStyle14,
@@ -29,7 +29,7 @@ class BookRating extends StatelessWidget {
         ),
         Opacity(
           opacity: .7,
-          child: Text(count.toString(), style: Style.textStyle14),
+          child: Text('(${count.toString()})', style: Style.textStyle14),
         ),
       ],
     );
