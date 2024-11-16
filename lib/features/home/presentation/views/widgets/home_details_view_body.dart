@@ -4,8 +4,8 @@ import 'books_details_section.dart';
 import 'custom_app_bar_book_details.dart';
 import 'similar_books_section.dart';
 
-class HomeDetailsViewBody extends StatelessWidget {
-  const HomeDetailsViewBody({super.key});
+class BookDetailsViewBody extends StatelessWidget {
+  const BookDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
